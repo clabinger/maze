@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+
+}
+
+div.wrapper{
+	text-align: center;
+}
+
+table.maze{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/*border: 1px solid black;*/
+	border-collapse: collapse;
+
+}
+
+table.maze tr.row{
+	display:inline-block;
+	margin: 0;
+	padding: 0;
+	background-color:;
+	float: left;
+}
+
+table.maze td{
+	background-color: #cfffcf;
+	display: inline-block;
+	margin: 0 1px 1px 0;
+	border-width: 1px;
+	border-color: black;
+	float:left;
+}
+
+
+td.border_n {border-top: 1px solid red;}
+td.border_e {border-right: 1px solid red;}
+td.border_s {border-bottom: 1px solid red;}
+td.border_w {border-left: 1px solid red;}
