@@ -334,7 +334,7 @@ var maze = function(width, height, canvas){
 			}else{
 				solve_count++;
 				
-				document.title = 'Maze'+ '1'.repeat(solve_count);
+				document.title = 'Maze'+ '!'.repeat(solve_count+1);
 
 				setTimeout(initialize, 3000);
 			}
