@@ -21,7 +21,8 @@ var maze = function(width, height, canvas){
 		visited_cells,
 		maze_start,
 		maze_end,
-		maze_start_temp;
+		maze_start_temp,
+		solve_count = 0;
 
 	var initialize = function(){
 
@@ -331,6 +332,9 @@ var maze = function(width, height, canvas){
 				solve_loop();
 
 			}else{
+				solve_count++;
+				
+				document.title = 'Maze'+ '1'.repeat(solve_count);
 
 				setTimeout(initialize, 3000);
 			}
